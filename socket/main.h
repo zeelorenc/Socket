@@ -4,10 +4,6 @@
 // SA-MP SDK
 #include "../SDK/amx/amx.h"
 #include "../SDK/plugincommon.h"
-// OpenSSL
-#include "openssl/rand.h"
-#include "openssl/ssl.h"
-#include "openssl/err.h"
 #if (defined(WIN32) || defined(_WIN32) || defined(_WIN64))
 	#include "windows.h"
 	#include "io.h"
@@ -40,7 +36,7 @@
 #include "CNatives.h"
 
 
-#define VERSION "0.2b"
+#define VERSION "0.2.5b (NON-SSL)"
 #define INVALID_CLIENT_ID (-1)
 
 typedef void (*logprintf_t)(char* format, ...);

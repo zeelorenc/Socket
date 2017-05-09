@@ -14,9 +14,6 @@ struct SocketStruct {
 	int max_clients;
 	int* connected_clients;
 	char bind_ip[15];
-	SSL_CTX *ssl_context; // client & server
-	SSL *ssl_handle; // client side
-	SSL **ssl_clients; // server side
 };
 
 class CSocket
